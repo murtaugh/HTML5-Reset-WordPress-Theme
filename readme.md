@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 #  HTML5 Reset Wordpress Theme (http://html5reset.org)
 
 ## Summary:
 
 The HTML5 Reset Wordpress theme is a blank theme based on the [https://github.com/murtaugh/HTML5-Reset](HTML5 Reset templates).
-=======
-#  HTML5 Reset Wordpress Theme [http://html5reset.org](http://html5reset.org)
-
-## Summary:
-
-The HTML5 Reset Wordpress theme is a blank theme based on the [https://github.com/murtaugh/HTML5-Reset]HTML5 Reset templates.
->>>>>>> 3633ef1e92d64db5d1753db222dc227b851af369
 
 1. A style sheet designed to strip initial files from browsers, meaning you start off with a blank slate.
 2. Easy to customize -- remove whatever you don't need, keep what you do.
