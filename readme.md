@@ -1,4 +1,4 @@
-#  HTML5 Reset Wordpress Theme [(http://html5reset.org)](http://html5reset.org)
+#  HTML5 Reset Wordpress Theme
 
 ## Summary:
 
