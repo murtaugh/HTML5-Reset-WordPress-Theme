@@ -14,23 +14,23 @@
 <!-- this is where we put our custom functions -->
 <script src="_/js/functions.js"></script>
 
-<!-- asynchronous google analytics
-	 NOTE: this is a variation of the official snippet: mathiasbynens.be/notes/async-analytics-snippet 
-	 change UA-XXXXX-X to your site's ID and uncomment
+<!-- Asynchronous google analytics; this is the official snippet.
+	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+	 
 <script>
- var _gaq = _gaq || [];
- _gaq.push(['_setAccount', 'UA-XXXXX-X']);
- _gaq.push(['_trackPageview']);
- (function() {
-  var ga = document.createElement('script');
-  ga.type = 'text/javascript';
-  ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(ga, s);
- })();
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
 </script>
-</script> -->
+-->
 	
 </body>
 
