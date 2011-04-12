@@ -163,9 +163,9 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 .post {}
 
-.entry {}
-.entry a {}
-.entry a:hover {}
+.entry-content {}
+.entry-content a {}
+.entry-content a:hover {}
 
 #meta {}
 .postmetadata {}

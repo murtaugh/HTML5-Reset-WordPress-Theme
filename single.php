@@ -4,17 +4,17 @@
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
-			<h2><?php the_title(); ?></h2>
-			
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+			<h1 class="entry-title"><?php the_title(); ?></h1>
 
-			<div class="entry">
+			<div class="entry-content">
 				
 				<?php the_content(); ?>
 
 				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 				
 				<?php the_tags( 'Tags: ', ', ', ''); ?>
+			
+				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
 			</div>
 			
