@@ -156,7 +156,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 
 
-/* Wordpress-specific HTML Elements and Styles
+/* And here begins the Wordpress fun.
 -------------------------------------------------------------------------------*/
 
 #page-wrap {width: 960px; margin: 20px auto;}
@@ -173,12 +173,12 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 #sidebar {}
 
 .navgation {}
-   .next-posts {}
-   .prev-posts {}
+.next-posts {}
+.prev-posts {}
 
 #searchform {}
-	#s {}
-	#searchsubmt {}
+#s {}
+#searchsubmt {}
 	
 ol.commentlist {list-style: none;}
 ol.commentlist li {}
