@@ -9,6 +9,16 @@
         // Make theme available for translation. Translations can be filed in the /languages/ directory
         load_theme_textdomain( 'h5rl', TEMPLATEPATH . '/languages' );
 
+        // Post Format support. You can also use the legacy "gallery" or "asides" (note the plural) categories.
+	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat') );
+
+	// This theme uses post thumbnails
+	add_theme_support( 'post-thumbnails' );
+
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Navigation', 'h5rl' ),
+	) );
 
         // Add RSS links to <head> section
 	automatic_feed_links();
