@@ -223,9 +223,6 @@ ol.commentlist li.thread-even {}
 ol.commentlist li.thread-odd {}
 
 
-} /* END screen media */
-
-
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
