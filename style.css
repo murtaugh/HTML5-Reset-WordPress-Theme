@@ -17,7 +17,7 @@ Version: 1
 	and the HTML5 Boilerplate	:: http://html5boilerplate.com
 	
 	Special thanks: The Wordpress theme owes its start to an empty theme authored 
-		by Chris Coyier: http://chriscoyier.net
+		by Chris Coyier & Jeff Starr: http://digwp.com
 	
 -------------------------------------------------------------------------------*/
 
@@ -125,9 +125,10 @@ button {width: auto; overflow: visible;}
 /* prevent BG image flicker upon hover */
 .ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
 
-/* the MOD class: self-clearing floats */
-.mod:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
-.ie .mod {zoom: 1;}
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
 
 
 
