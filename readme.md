@@ -6,7 +6,7 @@ The HTML5 Reset Wordpress theme is a blank theme based on the [HTML5 Reset templ
 
 ### hNews
 
-In addition to all the standard Wordpress elements and styles, we have added the code required so that the single post template conforms with the [hNews microformat](http://microformats.org/wiki/hnews).
+In addition to all the standard Wordpress elements and classes, we have added the code required so that the single post template conforms with the [hNews microformat](http://microformats.org/wiki/hnews).
 
 ### HTML5 Reset brings to the table:
 
