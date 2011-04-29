@@ -12,6 +12,7 @@
 				wp_enqueue_script('jquery');
 			}
 		}
+		core_mods();
 	}
 
 	// Clean up the <head>
