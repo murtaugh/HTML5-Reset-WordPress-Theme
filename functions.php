@@ -34,5 +34,7 @@
     		'after_title'   => '</h2>'
     	));
     }
+    
+    add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
 
 ?>
