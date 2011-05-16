@@ -1,8 +1,8 @@
 <?php
 	
 	// Add RSS links to <head> section
-	if ( !function_exists('add_theme_support') )
-		add_theme_support( 'automatic-feed-links' );
+	if (function_exists('add_theme_support'))
+		add_theme_support('automatic-feed-links');
 	else
 		automatic_feed_links();
 	
