@@ -4,7 +4,12 @@
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                <?php 
+		    if(is_front_page() || is_home()) {echo '<h2>';}else echo '<h1>'; 
+		    the_title();
+        	    if(is_front_page() || is_home()) {echo '</h2>';}else echo '</h1>';
+		?>
+
 
 			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
