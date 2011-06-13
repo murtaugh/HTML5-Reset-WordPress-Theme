@@ -4,7 +4,11 @@
 			
 		<article class="post" id="post-<?php the_ID(); ?>">
 
-			<h2><?php the_title(); ?></h2>
+                     <?php 
+	                  if(is_front_page() || is_home()) {echo '<h2>';}else echo '<h1>'; 
+		          the_title();
+        	          if(is_front_page() || is_home()) {echo '</h2>';}else echo '</h1>';
+		     ?>
 
 			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
