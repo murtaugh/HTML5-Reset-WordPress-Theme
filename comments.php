@@ -4,7 +4,7 @@
 		die ('Please do not load this page directly. Thanks!');
 
 	if ( post_password_required() ) { ?>
-		This post is password protected. Enter the password to view comments.
+		<?php _e('This post is password protected. Enter the password to view comments.', 'html5reset'); ?>
 	<?php
 		return;
 	}
@@ -12,7 +12,8 @@
 
 <?php if ( have_comments() ) : ?>
 	
-	<h2 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?></h2>
+	<h2 id="comments"><?php printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'html5reset' ),
+			number_format_i18n( get_comments_number() ), '<em>' . get_the_title() . '</em>' );?></h2>
 
 	<div class="navigation">
 		<div class="next-posts"><?php previous_comments_link() ?></div>
@@ -34,7 +35,7 @@
 		<!-- If comments are open, but there are no comments. -->
 
 	 <?php else : // comments are closed ?>
-		<p>Comments are closed.</p>
+		<p><?php _e( 'Comments are closed.', 'html5reset' ); ?></p>
 
 	<?php endif; ?>
 	
