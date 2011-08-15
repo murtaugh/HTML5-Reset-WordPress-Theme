@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<?php _e('<h2>Error 404 - Page Not Found</h2>','html5reset'); ?>
+	<h2><?php _e('Error 404 - Page Not Found','html5reset'); ?></h2>
 
 <?php get_sidebar(); ?>
 
