@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <!--[if lt IE 7 ]> <html class="ie ie6 no-js" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie ie7 no-js" <?php language_attributes(); ?>> <![endif]-->
@@ -7,13 +7,17 @@
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
+<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme">
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 	
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- WP-Minify CSS -->
 	
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- put in htaccess if you have write access to it to avoid validation error and edge cases -->
+    <!-- Header set X-UA-Compatible "IE=edge" -->
+
 	<?php if (is_search()) { ?>
 	<meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
@@ -40,24 +44,24 @@
 	</title>
 	
 	<meta name="title" content="<?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
+			  if (function_exists('is_tag') && is_tag()) {
+				 single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
+			  elseif (is_archive()) {
+				 wp_title(''); echo ' Archive - '; }
+			  elseif (is_search()) {
+				 echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
+			  elseif (!(is_404()) && (is_single()) || (is_page())) {
+				 wp_title(''); echo ' - '; }
+			  elseif (is_404()) {
+				 echo 'Not Found - '; }
+			  if (is_home()) {
+				 bloginfo('name'); echo ' - '; bloginfo('description'); }
+			  else {
+				  bloginfo('name'); }
+			  if ($paged>1) {
+				 echo ' - page '. $paged; }
 		   ?>">
-	<meta name="description" content="<?php bloginfo('description'); ?>">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
 	
 	<meta name="google-site-verification" content="">
 	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
@@ -106,7 +110,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+	<p>This page uses <a rel="profile" href="http://gmpg.org/xfn/11">XFN 1.1</a>!</p>
+
 	<div id="page-wrap"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 		<header id="header">
