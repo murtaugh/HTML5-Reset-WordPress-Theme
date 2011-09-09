@@ -18,45 +18,40 @@
 	<meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
 
-	<title>
-		   <?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
-		   ?>
+	<title><?php
+	        $title = '';
+	        if( is_tag() ) {
+	            $title .= single_tag_title("Tag Archive for &quot;", false); 
+	            $title .= '&quot; - ';
+	        }
+	        elseif( is_archive() ) {
+	            $title .= wp_title('', false);
+	            $title .= ' Archive - ';
+	        }
+	        elseif( is_search() ) {
+	            $title .= 'Search for &quot;'. wp_specialchars($s) .'&quot; - ';
+	        }
+	        elseif( !(is_404()) && (is_single()) || (is_page()) ) {
+	            $title .= wp_title('', false);
+	            $title .= ' - ';
+	        }
+	        elseif( is_404() ) {
+	            $title .= 'Not Found - ';
+	        }
+	        if( is_home() ) {
+	            $title .= get_bloginfo('name');
+	            $title .= ' - ';
+	            $title .= get_bloginfo('description');
+	        }
+	        else {
+	            $title .= get_bloginfo('name');
+	        }
+	        if( $paged>1 ) {
+	            $title .= ' - page '. $paged;
+	        } 
+	        echo $title; ?>
 	</title>
-	
-	<meta name="title" content="<?php
-		      if (function_exists('is_tag') && is_tag()) {
-		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
-		      elseif (is_search()) {
-		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
-		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
-		      else {
-		          bloginfo('name'); }
-		      if ($paged>1) {
-		         echo ' - page '. $paged; }
-		   ?>">
+	<meta name="title" content="<?php echo $title; ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	
 	<meta name="google-site-verification" content="">
