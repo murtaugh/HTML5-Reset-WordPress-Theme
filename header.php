@@ -27,10 +27,10 @@
 		      elseif (is_search()) {
 		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
+		         wp_title('-', true, 'right'); }
 		      elseif (is_404()) {
 		         echo 'Not Found - '; }
-		      if (is_home()) {
+		      if (is_home() || is_front_page()) {
 		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      else {
 		          bloginfo('name'); }
