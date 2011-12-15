@@ -8,10 +8,10 @@
             require_once($locale_file);
 	
 	// Add RSS links to <head> section
-	automatic_feed_links();
+	add_theme_support('automatic-feed-links');
 	
-	// Load jQuery
-	if ( !function_exists(core_mods) ) {
+		// Load jQuery
+	if ( !function_exists('core_mods') ) {
 		function core_mods() {
 			if ( !is_admin() ) {
 				wp_deregister_script('jquery');
