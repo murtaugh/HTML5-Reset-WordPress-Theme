@@ -19,7 +19,7 @@
 				wp_enqueue_script('jquery');
 			}
 		}
-		core_mods();
+		add_action('wp_enqueue_scripts', 'core_mods');
 	}
 
 	// Clean up the <head>
