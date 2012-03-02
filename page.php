@@ -1,28 +1,28 @@
 <?php get_header(); ?>
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
-		<article class="post" id="post-<?php the_ID(); ?>">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<h2><?php the_title(); ?></h2>
+<article class="post" id="post-<?php the_ID(); ?>">
 
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+<h2><?php the_title(); ?></h2>
 
-			<div class="entry">
+<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
 
-				<?php the_content(); ?>
+<div class="entry">
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+<?php the_content(); ?>
 
-			</div>
+<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 
-			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+</div>
 
-		</article>
-		
-		<?php comments_template(); ?>
+<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
-		<?php endwhile; endif; ?>
+</article>
+
+<?php comments_template(); ?>
+
+<?php endwhile; endif; ?>
 
 <?php get_sidebar(); ?>
 
