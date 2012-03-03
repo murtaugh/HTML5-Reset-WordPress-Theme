@@ -1,40 +1,42 @@
-/*   
+/* 
 Theme Name: The HTML5 Reset Theme
 Theme URI: http://html5reset.org
 Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
 Author: Monkey Do!
 Author URI: http://monkeydo.biz
-Version: 1
+Version: 1 
 */
 
 /*
-	HTML5 Reset Wordpress Theme :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
-	
-	Eric Meyer					:: http://ericmeyer.com
-	HTML5 Doctor				:: http://html5doctor.com
-	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
-	Special thanks: The Wordpress theme owes its start to an empty theme authored 
-		by Chris Coyier & Jeff Starr: http://digwp.com
-	
+    HTML5 Reset Wordpress Theme :: style.css
+    ----------------------------------------------------------
+    We have learned much from/been inspired by/taken code where offered from:
+    
+    Eric Meyer                    :: http://ericmeyer.com
+    HTML5 Doctor                :: http://html5doctor.com
+    and the HTML5 Boilerplate    :: http://html5boilerplate.com
+    
+    Special thanks: The Wordpress theme owes its start to an empty theme authored 
+        by Chris Coyier & Jeff Starr: http://digwp.com
+
 -------------------------------------------------------------------------------*/
 
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}									
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}                                    
 
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+article, aside, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
 
 /* Responsive images and other embedded objects
    Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
@@ -47,7 +49,7 @@ embed {max-width: 100%;}
 html {overflow-y: scroll;}
 
 /* we use a lot of ULs that aren't bulleted. 
-	don't forget to restore the bullets within content. */
+    don't forget to restore the bullets within content. */
 ul {list-style: none;}
 
 blockquote, q {quotes: none;}
@@ -73,10 +75,10 @@ hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 
 input, select {vertical-align: middle;}
 
 pre {
-	white-space: pre; /* CSS2 */
-	white-space: pre-wrap; /* CSS 2.1 */
-	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-	word-wrap: break-word; /* IE */
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
 }
 
 input[type="radio"] {vertical-align: text-bottom;}
@@ -88,7 +90,7 @@ select, input, textarea {font: 99% sans-serif;}
 table {font-size: inherit; font: 100%;}
  
 /* Accessible focus treatment
-	people.opera.com/patrickl/experiments/keyboard/test */
+    people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active {outline: none;}
 
 small {font-size: 85%;}
@@ -98,7 +100,7 @@ strong, th {font-weight: bold;}
 td, td img {vertical-align: top;} 
 
 /* Make sure sup and sub don't screw with your line-heights
-	gist.github.com/413930 */
+    gist.github.com/413930 */
 sub, sup {font-size: 75%; line-height: 0; position: relative;}
 sup {top: -0.5em;}
 sub {bottom: -0.25em;}
@@ -131,7 +133,6 @@ button {width: auto; overflow: visible;}
 .clearfix { zoom: 1; }  
 
 
-
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
 
@@ -139,7 +140,7 @@ button {width: auto; overflow: visible;}
 body {font: 13px Helmet, Freesans, sans-serif;}
 
 /* using local fonts? make sure to read up on Paul Irish's 
-	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+    Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
 
 /* we like off-black for text */
 body, select, input, textarea {color: #333;}
@@ -151,12 +152,11 @@ a:hover {color: #69f;}
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
 ::selection {background: #fcd700; color: #fff; text-shadow: none;} 
 
-/*	j.mp/webkit-tap-highlight-color */
+/* j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;} 
 
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
-
 
 
 /* And here begins the Wordpress fun.
@@ -182,7 +182,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 #searchform {}
 #s {}
 #searchsubmt {}
-	
+    
 ol.commentlist {list-style: none;}
 ol.commentlist li {}
 ol.commentlist li.alt {}
@@ -224,29 +224,24 @@ ol.commentlist li.thread-alt {}
 ol.commentlist li.thread-even {}
 ol.commentlist li.thread-odd {}
 
-
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
 
-
-
 }
-
 
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-	
-		
+
 }
 
 @media all and (orientation: portrait) {
-	
+
 }
 
 @media all and (orientation: landscape) {
-	
+   
 }
