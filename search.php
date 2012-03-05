@@ -13,7 +13,9 @@ while (have_posts()) : the_post(); ?>
 <?php endwhile;
 require(TEMPLATEPATH . '/_/inc/nav.php' );
 else : ?>
+<article class="warning">
 <h2>No posts found.</h2>
+</article>
 <?php endif;
 get_sidebar();
 get_footer(); ?>
