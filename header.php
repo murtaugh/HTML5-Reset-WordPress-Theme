@@ -23,39 +23,39 @@
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
+		         wp_title(''); echo ' Archive | '; }
 		      elseif (is_search()) {
 		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
+		      elseif (!(is_404()) && (is_single()) || (is_page()) && !(is_front_page())) {
+		         wp_title(''); echo ' | '; }
 		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
+		         echo 'Not Found | '; }
+		      if (is_front_page()) {
+		         bloginfo('name'); echo ' | '; bloginfo('description'); }
 		      else {
 		          bloginfo('name'); }
 		      if ($paged>1) {
-		         echo ' - page '. $paged; }
+		         echo ' | page '. $paged; }
 		   ?>
 	</title>
 	
 	<meta name="title" content="<?php
-		      if (function_exists('is_tag') && is_tag()) {
+		       if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
+		         wp_title(''); echo ' Archive | '; }
 		      elseif (is_search()) {
 		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-		      elseif (!(is_404()) && (is_single()) || (is_page())) {
-		         wp_title(''); echo ' - '; }
+		      elseif (!(is_404()) && (is_single()) || (is_page()) && !(is_front_page())) {
+		         wp_title(''); echo ' | '; }
 		      elseif (is_404()) {
-		         echo 'Not Found - '; }
-		      if (is_home()) {
-		         bloginfo('name'); echo ' - '; bloginfo('description'); }
+		         echo 'Not Found | '; }
+		      if (is_front_page()) {
+		         bloginfo('name'); echo ' | '; bloginfo('description'); }
 		      else {
 		          bloginfo('name'); }
 		      if ($paged>1) {
-		         echo ' - page '. $paged; }
+		         echo ' | page '. $paged; }
 		   ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	
@@ -110,8 +110,13 @@
 	<div id="page-wrap"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
 		<header id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
-			<?php wp_nav_menu(array('container' => 'nav')); ?>
+			<hgroup>
+				<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+				<div class="description"><?php bloginfo('description'); ?></div>
+			</hgroup>
+			
+			<nav id="access" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #access -->
 		</header>
 
