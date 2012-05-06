@@ -13,9 +13,9 @@
 			</div>
 
 			<footer class="postmetadata">
-				<?php the_tags('Tags: ', ', ', '<br />'); ?>
-				Posted in <?php the_category(', ') ?> | 
-				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+				<?php the_tags(__('Tags: ','html5reset'), ', ', '<br />'); ?>
+				<?php _e('Posted in','html5reset'); ?> <?php the_category(', ') ?> | 
+				<?php comments_popup_link(__('No Comments &#187;','html5reset'), __('1 Comment &#187;','html5reset'), __('% Comments &#187;','html5reset')); ?>
 			</footer>
 
 		</article>
@@ -26,7 +26,7 @@
 
 	<?php else : ?>
 
-		<h2>Not Found</h2>
+		<h2><?php _e('Not found.','html5reset'); ?>/h2>
 
 	<?php endif; ?>
 
