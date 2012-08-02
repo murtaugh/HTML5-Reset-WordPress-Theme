@@ -115,7 +115,7 @@
 				<div class="description"><?php bloginfo('description'); ?></div>
 			</hgroup>
 			
-			<nav role="navigation">
+			<nav id="access" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- end nav -->
 		</header>
