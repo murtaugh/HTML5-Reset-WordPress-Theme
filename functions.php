@@ -11,7 +11,7 @@
 	automatic_feed_links();
 	
 	// Load jQuery
-	if ( !function_exists(core_mods) ) {
+	if ( !function_exists('core_mods') ) {
 		function core_mods() {
 			if ( !is_admin() ) {
 				wp_deregister_script('jquery');
