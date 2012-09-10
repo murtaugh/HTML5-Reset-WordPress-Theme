@@ -41,8 +41,8 @@
       if (!is_admin()) {
         wp_deregister_script('jquery');
         wp_deregister_script('jquery-ui');
-        wp_enqueue_script('jquery', "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js");
-        wp_enqueue_script('jquery-ui', "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js", array('jquery'), false, true);
+        wp_enqueue_script('jquery', "http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js");
+        wp_enqueue_script('jquery-ui', "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js", array('jquery'), false, true);
       }
     }
     add_action('wp_enqueue_scripts', 'core_mods');
