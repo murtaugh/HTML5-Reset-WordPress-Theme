@@ -59,7 +59,7 @@
 
   add_action('login_head', 'modify_admin_custom_login_logo');
   function modify_admin_custom_login_logo() {
-    $image = '/_/images/login-logo.png';
+    $image = '/_/images/login_logo.png';
     list($width, $height) = getimagesize(get_template_directory().$image);
 
     if (file_exists(get_template_directory().$image)) {
