@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes() ?>><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
+<head data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
 
   <meta charset="<?php bloginfo('charset') ?>">
 
@@ -59,7 +59,7 @@
        ?>">
   <meta name="description" content="<?php bloginfo('description') ?>">
 
-  <meta name="google-site-verification" content="<?php echo @getcustomfield('google_site_verification_id') ?: '' ?>">
+  <meta name="google-site-verification" content="<?php echo getcustomfield('google-site-verification') ?>">
   <!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
 
   <meta name="author" content="<?php bloginfo('name') ?>">
