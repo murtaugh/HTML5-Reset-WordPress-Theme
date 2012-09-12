@@ -74,24 +74,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   -->
 
-  <link rel="icon" href="<?php bloginfo('template_directory') ?>/_/images/favicon.gif">
-  <link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/_/images/favicon.gif">
+  <link rel="icon" href="<?php echo get_template_directory_uri() ?>/_/images/favicon.gif">
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/_/images/favicon.gif">
   <!-- This is the traditional favicon.
      - size: 16x16 or 32x32
      - transparency is OK
      - see wikipedia for info on browser support: http://mky.be/favicon/ -->
 
-  <link rel="apple-touch-icon" href="<?php bloginfo('template_directory') ?>/_/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri() ?>/_/images/apple-touch-icon.png">
   <!-- The is the icon for iOS's Web Clip.
      - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
      - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
      - Transparency is not recommended (iOS will put a black BG behind the icon) -->
 
   <!-- CSS: screen, mobile & print are all in the same file -->
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>/style.css">
 
   <!-- all our JS is at the bottom of the page, except for Modernizr. -->
-  <script src="<?php bloginfo('template_directory') ?>/_/js/modernizr-1.7.min.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/_/js/modernizr-1.7.min.js"></script>
 
   <link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 
