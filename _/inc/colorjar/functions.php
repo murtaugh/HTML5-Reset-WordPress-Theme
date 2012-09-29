@@ -96,7 +96,10 @@
   add_action('admin_menu', 'modify_admin_menu');
   function modify_admin_menu() {
     //remove_menu_page('edit.php');
+    //
+    // WP Link Manager will be going away once WP3.5 is released
     remove_menu_page('link-manager.php');
+    //
     //remove_menu_page('themes.php');
     //remove_menu_page('tools.php');
     //remove_menu_page('upload.php');
