@@ -28,6 +28,18 @@ $(document).ready(function (){
     });
   }
 
+  // ------------------------------------------------------
+  // Switch out "DOMAIN" to be whatever the site domain is.
+  // ie. "colorjar" for http://colorjar.com
+  // ------------------------------------------------------
+  /*
+  $.map($('a'), function(link){
+    if (link.href.search(/.DOMAIN./) === -1){
+      $(link).attr('target', '_blank');
+    }
+  });
+  */
+
 });
 
 
