@@ -7,6 +7,14 @@
         if ( is_readable($locale_file) )
             require_once($locale_file);
 	
+    // Add Custom Headers
+    add_action('init', 'register_custom_menu');
+
+    function register_custom_menu() {
+
+    register_nav_menu('custom_menu', __('Custom Menu'));
+    }
+
 	// Add RSS links to <head> section
 	automatic_feed_links();
 	
