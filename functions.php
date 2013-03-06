@@ -8,7 +8,7 @@
             require_once($locale_file);
 	
 	// Add RSS links to <head> section
-	automatic_feed_links();
+	add_theme_support( 'automatic-feed-links' );
 	
 	// Load jQuery
 	if ( !function_exists(core_mods) ) {
