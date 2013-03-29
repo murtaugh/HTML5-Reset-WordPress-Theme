@@ -1,82 +1,113 @@
-/*   
+/* 
 Theme Name: The HTML5 Reset Theme
 Theme URI: http://html5reset.org
 Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
 Author: Monkey Do!
 Author URI: http://monkeydo.biz
-Version: 1
-*/
+Version: 1 
 
-/*
-	HTML5 Reset Wordpress Theme :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
-	
-	Eric Meyer					:: http://ericmeyer.com
-	HTML5 Doctor				:: http://html5doctor.com
-	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
-	Special thanks: The Wordpress theme owes its start to an empty theme authored 
-		by Chris Coyier & Jeff Starr: http://digwp.com
-	
+    HTML5 Reset Wordpress Theme :: style.css
+    ----------------------------------------------------------
+    We have learned much from/been inspired by/taken code where offered from:
+
+    HTML5 Doctor                :: http://html5doctor.com
+    and the HTML5 Boilerplate    :: http://html5boilerplate.com
+    
+    Special thanks: The Wordpress theme owes its start to an empty theme authored 
+        by Chris Coyier & Jeff Starr: http://digwp.com
+
 -------------------------------------------------------------------------------*/
 
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}									
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    vertical-align: baseline;
+    background: transparent;
+}                                    
 
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+article, aside, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
 
 /* Responsive images and other embedded objects
    Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
    There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
+
 img,
 object,
-embed {max-width: 100%;}
+embed {
+    max-width: 100%;
+}
 
 /* force a vertical scrollbar to prevent a jumpy page */
-html {overflow-y: scroll;}
+html {
+    overflow-y: scroll;
+}
 
 /* we use a lot of ULs that aren't bulleted. 
-	don't forget to restore the bullets within content. */
-ul {list-style: none;}
+    don't forget to restore the bullets within content. */
+ul {
+    list-style-type: none;
+}
 
-blockquote, q {quotes: none;}
+blockquote, q {
+    quotes: none;
+}
 
 blockquote:before, 
 blockquote:after, 
 q:before, 
-q:after {content: ''; content: none;}
+q:after {
+    content: ''; content: none;
+}
 
-a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
 
-del {text-decoration: line-through;}
+del {
+    text-decoration: line-through;
+}
 
-abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted #000000;
+    cursor: help;
+}
 
 /* tables still need cellspacing="0" in the markup */
-table {border-collapse: collapse; border-spacing: 0;}
-th {font-weight: bold; vertical-align: bottom;}
-td {font-weight: normal; vertical-align: top;}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+td {
+    font-weight: normal;
+    vertical-align: top;
+}
 
 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
 
 input, select {vertical-align: middle;}
 
 pre {
-	white-space: pre; /* CSS2 */
-	white-space: pre-wrap; /* CSS 2.1 */
-	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
-	word-wrap: break-word; /* IE */
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
 }
 
 input[type="radio"] {vertical-align: text-bottom;}
@@ -88,33 +119,57 @@ select, input, textarea {font: 99% sans-serif;}
 table {font-size: inherit; font: 100%;}
  
 /* Accessible focus treatment
-	people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active {outline: none;}
+    people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+    outline: none;
+}
 
-small {font-size: 85%;}
+small {
+    font-size: 85%;
+}
 
-strong, th {font-weight: bold;}
+strong, th {
+    font-weight: bold;
+}
 
-td, td img {vertical-align: top;} 
+td, td img {
+    vertical-align: top;
+} 
 
 /* Make sure sup and sub don't screw with your line-heights
-	gist.github.com/413930 */
-sub, sup {font-size: 75%; line-height: 0; position: relative;}
-sup {top: -0.5em;}
-sub {bottom: -0.25em;}
+    gist.github.com/413930 */
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
 
 /* standardize any monospaced elements */
-pre, code, kbd, samp {font-family: monospace, sans-serif;}
+pre, code, kbd, samp {
+    font-family: monospace, sans-serif;
+}
 
 /* hand cursor on clickable elements */
 .clickable,
 label, 
 input[type=button], 
 input[type=submit], 
-button {cursor: pointer;}
+button {
+    cursor: pointer;
+}
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
-button, input, select, textarea {margin: 0;}
+button, input, select, textarea {
+    margin: 0;
+}
 
 /* make buttons play nice in IE */
 button {width: auto; overflow: visible;}
@@ -130,59 +185,192 @@ button {width: auto; overflow: visible;}
 .clearfix:after { clear: both; }  
 .clearfix { zoom: 1; }  
 
-
-
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
 
-/* new Linux- and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
-body {font: 13px Helmet, Freesans, sans-serif;}
-
-/* using local fonts? make sure to read up on Paul Irish's 
-	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
-
 /* we like off-black for text */
-body, select, input, textarea {color: #333;}
-
-a {color: #03f;}
-a:hover {color: #69f;}
+body, select, input, textarea {color: #333333;}
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
 ::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
 ::selection {background: #fcd700; color: #fff; text-shadow: none;} 
 
-/*	j.mp/webkit-tap-highlight-color */
+/* j.mp/webkit-tap-highlight-color */
 a:link {-webkit-tap-highlight-color: #fcd700;} 
 
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
 
-
 /* And here begins the Wordpress fun.
 -------------------------------------------------------------------------------*/
 
-#page-wrap {width: 960px; margin: 20px auto;}
+#page-wrap {
+padding: 1em;
+width: 90%; 
+max-width: 1200px; 
+min-width: 210px;
+margin: 2em auto;
+overflow: hidden;
+}
 
-.post {}
+body {
+font: .9em/1.5 georgia, serif;
+}
 
-.entry-content {}
-.entry-content a {}
-.entry-content a:hover {}
+#header h1 {
+font-size:2.3em;
+}
 
-#meta {}
-.postmetadata {}
+a {
+text-decoration: none;
+color: #333333;
+border-bottom: .02em solid #999999;
+}
 
-#sidebar {}
+a:visited {
+text-decoration: none;
+color: #000000;
+border-bottom: .02em solid #000000;
+}
 
-.navgation {}
+a:hover {
+color: #666666;
+border-bottom: .02em solid #dddddd;
+}
+
+.comments-link {
+    display:block;
+}
+
+h2,h3,h4,h5 {
+    line-height: 1.25;
+    margin-bottom: .6em;
+}
+
+#meta {
+    margin: 1em 0;
+}
+
+.meta, .postmetadata {
+    color:#818181;
+    margin: 8% 0 4% 0;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+.postmetadata span {
+    text-transform: uppercase;
+    color: #523527;
+}
+
+article {
+    border-top: .1em solid #222222;
+    padding-top: 2%;
+    float: right;
+    width: 31%;
+    margin: 4.5% 2.8em 8% .5em;
+}
+
+.sticky {
+    border-top: 0;
+    font-size: 1.4em;
+    width: 65%;
+    clear: both;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    overflow: hidden;
+}
+
+.sticky footer.postmetadata {
+    margin-top: 2%;
+}
+
+.sticky footer.meta {
+    margin-top: 5%;
+}
+
+#sidebar {
+    text-transform: uppercase;
+    width: 20%;
+    color: #656952;
+    font-size: .8em;
+    line-height: 2;
+    text-align: right;
+}
+
+#sidebar h2,
+#sidebar h3 {
+    margin-top: 18%;
+    border-bottom: .02em solid #818181;
+}
+
+#sidebar li {
+    margin-bottom: 8%;
+}
+
+#sidebar li a, 
+#sidebar li a:visited {
+    border-bottom: .02em solid #ccc;
+}
+
+.navigation {
+    width: 20%;
+    margin: 7% 0 6% 0;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.navigation li {
+    margin-bottom: 4%;
+}
+
+#footer {
+    clear: both;
+    background-color: #fafafa;
+    color: #818181;
+    text-transform: uppercase;
+}
+
 .next-posts {}
 .prev-posts {}
 
-#searchform {}
-#s {}
-#searchsubmt {}
-	
+#searchform legend, 
+.screen-reader-text {
+    display: none;
+}
+
+#s {
+padding: .8em 1em;
+float: left;
+width: 60%;
+border: .02em solid #818181;
+}
+
+#searchsubmit {
+padding: .8em 2em;
+background-color: #ededed;
+color: #000000;
+border: .02em solid #bababa;
+width: 20%;
+}
+
+#searchsubmit:hover {
+background-color: #dddddd;
+color: #222222;
+border: .02em solid #444444;
+}
+
+.gallery a,
+.gallery a:visited {
+    display: block;
+    margin-right: .5em;
+}
+
+.wp-caption-text {
+    font-size: .7em;
+}
+
 ol.commentlist {list-style: none;}
 ol.commentlist li {}
 ol.commentlist li.alt {}
@@ -224,29 +412,33 @@ ol.commentlist li.thread-alt {}
 ol.commentlist li.thread-even {}
 ol.commentlist li.thread-odd {}
 
-
 /* Print styles!
 -------------------------------------------------------------------------------*/
 @media print {
 
-
-
 }
-
 
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-	
-		
+#page-wrap {
+padding: 1em;
+background-color:#ededed;
+color: #000000;
+width: 90%; 
+max-width: 440px; 
+min-width: 210px; 
+margin: 1em auto;
+}
+article {}
 }
 
 @media all and (orientation: portrait) {
-	
+
 }
 
 @media all and (orientation: landscape) {
-	
+   
 }
