@@ -2,7 +2,7 @@
 
 	<?php if (have_posts()) : ?>
 
-		<h2>Search Results</h2>
+		<h2><?php _e('Search Results','html5reset'); ?></h2>
 
 		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
 
@@ -28,7 +28,7 @@
 
 	<?php else : ?>
 
-		<h2>No posts found.</h2>
+		<h2><?php _e('No posts found.','html5reset'); ?></h2>
 
 	<?php endif; ?>
 

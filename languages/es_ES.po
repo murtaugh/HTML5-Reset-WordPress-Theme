@@ -1,0 +1,233 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML5-Reset-WordPress-Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-06 17:10+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: tx2z <tx2z@caosmental.com>\n"
+"Language-Team: fxbenard <fxbenard@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:3
+msgid "Error 404 - Page Not Found"
+msgstr "Error 404 - Página no encontrada"
+
+#: archive.php:8
+msgid "Archive for the"
+msgstr "Archivo para la categoría"
+
+#: archive.php:8
+msgid "Category"
+msgstr " "
+
+#: archive.php:11
+msgid "Posts Tagged"
+msgstr "Entrada etiquetada como"
+
+#: archive.php:14
+#: archive.php:17
+#: archive.php:20
+msgid "Archive for"
+msgstr "Archivo para el"
+
+#: archive.php:23
+msgid "Author Archive"
+msgstr "Archivo del autor"
+
+#: archive.php:26
+msgid "Blog Archives"
+msgstr "Archivo del blog"
+
+#: archive.php:52
+msgid "Nothing found"
+msgstr "Nada encontrado"
+
+#: comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Esta entrada está protegida por contraseña. Introduce la contraseña para ver los comentarios."
+
+#: comments.php:15
+msgid "No Responses"
+msgstr "Sin respuestas"
+
+#: comments.php:15
+msgid "One Response"
+msgstr "Una respuesta"
+
+#: comments.php:15
+msgid "% Responses"
+msgstr "% respuestas"
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr "Comentarios cerrados"
+
+#: comments.php:47
+msgid "Leave a Reply"
+msgstr "Deja un comentario"
+
+#: comments.php:47
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Deja un comentario a %s"
+
+#: comments.php:54
+msgid "You must be"
+msgstr "Debes"
+
+#: comments.php:54
+msgid "logged in"
+msgstr "logearte"
+
+#: comments.php:54
+msgid "to post a comment"
+msgstr "para comentar"
+
+#: comments.php:61
+msgid "Logged in as"
+msgstr "Logeado como"
+
+#: comments.php:61
+msgid "Log out"
+msgstr "Desconectarte"
+
+#: comments.php:67
+msgid "Name"
+msgstr "Nombre"
+
+#: comments.php:72
+msgid "Mail (will not be published)"
+msgstr "Correo electrónico (no será publicado)"
+
+#: comments.php:77
+msgid "Website"
+msgstr "Sitio Web"
+
+#: comments.php:89
+msgid "Submit Comment"
+msgstr "Enviar comentario"
+
+#: functions.php:35
+msgid "Sidebar Widgets"
+msgstr ""
+
+#: functions.php:37
+msgid "These are widgets for the sidebar."
+msgstr ""
+
+#: header.php:44
+msgid "Tag Archive for &quot;"
+msgstr "Etiquetas archivadas para"
+
+#: header.php:46
+msgid " Archive - "
+msgstr " Archivo - "
+
+#: header.php:48
+msgid "Search for &quot;"
+msgstr "Búsqueda por &quot;"
+
+#: header.php:52
+msgid "Not Found - "
+msgstr "No encontrado - "
+
+#: index.php:16
+msgid "Tags: "
+msgstr "Etiquetas: "
+
+#: index.php:17
+msgid "Posted in"
+msgstr "Publicado en"
+
+#: index.php:18
+msgid "No Comments &#187;"
+msgstr "Sin comentarios &#187;"
+
+#: index.php:18
+msgid "1 Comment &#187;"
+msgstr "1 Comentario  &#187;"
+
+#: index.php:18
+msgid "% Comments &#187;"
+msgstr "% Comentarios  &#187;"
+
+#: index.php:29
+msgid "Not found."
+msgstr "No encontrado."
+
+#: page.php:15
+msgid "Pages: "
+msgstr "Páginas: "
+
+#: page.php:19
+msgid "Edit this entry."
+msgstr "Editar esta entrada."
+
+#: search.php:5
+msgid "Search Results"
+msgstr "Resultados de la búsqueda"
+
+#: search.php:31
+msgid "No posts found."
+msgstr "Ninguna entrada encontrada."
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr "Buscar por: "
+
+#: searchform.php:6
+msgid "Search"
+msgstr "Buscar"
+
+#: sidebar.php:9
+msgid "Pages"
+msgstr "Páginas"
+
+#: sidebar.php:11
+msgid "Archives"
+msgstr "Archivos"
+
+#: sidebar.php:16
+msgid "Categories"
+msgstr "Categorías"
+
+#: sidebar.php:23
+msgid "Meta"
+msgstr ""
+
+#: sidebar.php:27
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: sidebar.php:31
+msgid "Subscribe"
+msgstr "Suscribirse"
+
+#: sidebar.php:33
+msgid "Entries (RSS)"
+msgstr "Entradas (RSS)"
+
+#: sidebar.php:34
+msgid "Comments (RSS)"
+msgstr "Comentarios (RSS)"
+
+#: single.php:13
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: single.php:15
+msgid "Tags:"
+msgstr "Etiquetas:"
+
+#: single.php:21
+msgid "Edit this entry"
+msgstr "Editar esta entrada"
+
