@@ -15,7 +15,7 @@
 		function core_mods() {
 			if ( !is_admin() ) {
 				wp_deregister_script('jquery');
-				wp_register_script('jquery', ("//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"), false);
+				wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"), false);
 				wp_enqueue_script('jquery');
 			}
 		}
@@ -43,5 +43,9 @@
     }
     
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
-
+    add_theme_support( 'post-thumbnails' );
+    
+    register_nav_menus( array(
+        'primary' => 'Primary Navigation'
+    ));
 ?>
