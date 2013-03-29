@@ -108,7 +108,11 @@
 <body <?php body_class(); ?>>
 	
 	<div id="page-wrap"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
-
+	  <!-- Uncomment to turn on custom menus
+		<nav id="nav" role="navigation">
+			<?php wp_nav_menu(array('menu' => 'custom_menu')); ?>	
+		</nav> 
+	  -->
 		<header id="header">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
 			<div class="description"><?php bloginfo('description'); ?></div>
