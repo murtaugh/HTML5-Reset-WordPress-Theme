@@ -14,8 +14,12 @@
 	if ( !function_exists(core_mods) ) {
 		function core_mods() {
 			if ( !is_admin() ) {
+                                $protocol = "http:";
+                                if ($_SERVER['HTTPS'] == 'on') {
+                                    $protocol = 'https:';
+                                }
 				wp_deregister_script('jquery');
-				wp_register_script('jquery', ("//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"), false);
+				wp_register_script('jquery', ($protocol."//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"), false);
 				wp_enqueue_script('jquery');
 			}
 		}
