@@ -1,5 +1,13 @@
 #  HTML5 Reset Wordpress Theme
 
+## March 30 Update
+
+*"Hmm, Upgrades." -- Neo*
+
+We're rolling along with the first set of changes! Consider this a "beta" release, as some of the new functions are still very raw and easily breakable. I hope that this gives everyone a good idea for how this theme will be taking shape as we move forward. The biggest addition is the amazing [Options Framework](http://wptheming.com/options-framework-plugin/) by [@devinsays](https://twitter.com/devinsays). This will help us keep track of the meta information and other small pieces that clutter up the head unless in use.
+
+Stay tuned for more updates and please continue to comment if you have any issues!
+
 ## March 21 Update
 
 Good news! WordPress developer and all around good guy CK Hicks ([@ckhicks](http://twitter.com/ckhicks)) has offered to help me out (read as: do the WordPress work I'm incapable of) with getting these files up to date!

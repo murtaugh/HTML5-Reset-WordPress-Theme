@@ -2,43 +2,41 @@
 Theme Name: The HTML5 Reset Theme
 Theme URI: http://html5reset.org
 Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
-Author: Monkey Do!
+Author: Monkey Do! + @ckhicks
 Author URI: http://monkeydo.biz
-Version: 1
+Version: 2.0
 */
 
 /*
-	HTML5 Reset Wordpress Theme :: style.css
+	HTML5 Reset :: style.css
 	----------------------------------------------------------
 	We have learned much from/been inspired by/taken code where offered from:
 	
-	Eric Meyer					:: http://ericmeyer.com
+	Eric Meyer					:: http://meyerweb.com
 	HTML5 Doctor				:: http://html5doctor.com
 	and the HTML5 Boilerplate	:: http://html5boilerplate.com
-	
-	Special thanks: The Wordpress theme owes its start to an empty theme authored 
-		by Chris Coyier & Jeff Starr: http://digwp.com
 	
 -------------------------------------------------------------------------------*/
 
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
 
-html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video, details, summary {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
 }									
 
-article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+article, aside, figure, footer, header, hgroup, nav, section, details, summary {display: block;}
 
 /* Responsive images and other embedded objects
-   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers. 
-   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
 img,
 object,
 embed {max-width: 100%;}
@@ -80,20 +78,17 @@ pre {
 }
 
 input[type="radio"] {vertical-align: text-bottom;}
-input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
 .ie6 input {vertical-align: text-bottom;}
 
 select, input, textarea {font: 99% sans-serif;}
 
 table {font-size: inherit; font: 100%;}
- 
-/* Accessible focus treatment
-	people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active {outline: none;}
 
 small {font-size: 85%;}
 
-strong, th {font-weight: bold;}
+strong {font-weight: bold;}
 
 td, td img {vertical-align: top;} 
 
@@ -128,8 +123,13 @@ button {width: auto; overflow: visible;}
 /* let's clear some floats */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
 .clearfix:after { clear: both; }  
-.clearfix { zoom: 1; }  
+.clearfix { zoom: 1; }
 
+/* apply a natural box layout model to all elements */
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;}
 
 
 /* Ok, this is where the fun starts.
@@ -157,6 +157,9 @@ a:link {-webkit-tap-highlight-color: #fcd700;}
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
 
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
 
 
 /* And here begins the Wordpress fun.
@@ -229,8 +232,6 @@ ol.commentlist li.thread-odd {}
 -------------------------------------------------------------------------------*/
 @media print {
 
-
-
 }
 
 
@@ -239,8 +240,7 @@ ol.commentlist li.thread-odd {}
 
 /* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (max-device-width: 480px) {
-	
-		
+
 }
 
 @media all and (orientation: portrait) {

@@ -1,3 +1,10 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage HTML5-Reset-Wordpress-Theme
+ * @since HTML5 Reset 2.0
+ */
+?>
 		<footer id="footer" class="source-org vcard copyright">
 			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
 		</footer>

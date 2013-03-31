@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/**
+ * @package WordPress
+ * @subpackage HTML5-Reset-Wordpress-Theme
+ * @since HTML5 Reset 2.0
+ */
+ get_header(); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
@@ -6,7 +12,7 @@
 
 			<h2><?php the_title(); ?></h2>
 
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+			<?php posted_on(); ?>
 
 			<div class="entry">
 

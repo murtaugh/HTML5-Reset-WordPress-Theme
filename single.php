@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/**
+ * @package WordPress
+ * @subpackage HTML5-Reset-Wordpress-Theme
+ * @since HTML5 Reset 2.0
+ */
+ get_header(); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -14,7 +20,7 @@
 				
 				<?php the_tags( 'Tags: ', ', ', ''); ?>
 			
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+				<?php posted_on(); ?>
 
 			</div>
 			
@@ -25,6 +31,8 @@
 	<?php comments_template(); ?>
 
 	<?php endwhile; endif; ?>
+
+<?php post_navigation(); ?>
 	
 <?php get_sidebar(); ?>
 
