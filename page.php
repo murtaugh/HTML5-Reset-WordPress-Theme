@@ -1,29 +1,26 @@
-<?php get_header(); ?>
+<?php get_header() ?>
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
-		<article class="post" id="post-<?php the_ID(); ?>">
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<h2><?php the_title(); ?></h2>
+    <article class="post" id="post-<?php the_ID() ?>">
 
-			<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+      <h2><?php the_title() ?></h2>
 
-			<div class="entry">
+      <?php require(get_template_directory().'/_/inc/meta.php') ?>
 
-				<?php the_content(); ?>
+      <div class="entry">
+        <?php the_content() ?>
+        <?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')) ?>
+      </div>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+      <?php edit_post_link('Edit this entry.', '<p>', '</p>') ?>
 
-			</div>
+    </article>
 
-			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
+    <?php comments_template() ?>
 
-		</article>
-		
-		<?php comments_template(); ?>
+    <?php endwhile; endif; ?>
 
-		<?php endwhile; endif; ?>
+<?php get_sidebar() ?>
 
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+<?php get_footer() ?>

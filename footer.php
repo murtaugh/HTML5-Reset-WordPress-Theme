@@ -1,26 +1,23 @@
-		<footer id="footer" class="source-org vcard copyright">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
-		</footer>
+    <footer id="footer" class="source-org vcard copyright">
+      <small>&copy;<?php echo date('Y'); echo ' '; bloginfo('name'); ?></small>
+    </footer>
 
-	</div>
+  </div>
 
-	<?php wp_footer(); ?>
+  <?php wp_footer() ?>
 
 
-<!-- here comes the javascript -->
-
-<!-- jQuery is called via the Wordpress-friendly way via functions.php -->
-
-<!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/_/js/functions.js"></script>
 
 <!-- Asynchronous google analytics; this is the official snippet.
-	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
+   Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.  -->
+<?php
+  @$analytics_id = getcustomfield('google_analytics_id') ?: '';
+  if (!empty($analytics_id)) :
+?>
 <script>
-
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
+  _gaq.push(['_setAccount', '<?php echo $analytics_id ?>']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -28,10 +25,8 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
--->
-	
-</body>
+<?php endif ?>
 
+</body>
 </html>

@@ -1,37 +1,35 @@
-<?php get_header(); ?>
+<?php get_header() ?>
 
-	<?php if (have_posts()) : ?>
+  <?php if (have_posts()) : ?>
 
-		<h2>Search Results</h2>
+    <h2>Search Results</h2>
 
-		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+    <?php require(get_template_directory().'/_/inc/nav.php') ?>
 
-		<?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+      <article <?php post_class() ?> id="post-<?php the_ID() ?>">
 
-				<h2><?php the_title(); ?></h2>
+        <h2><?php the_title() ?></h2>
 
-				<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
+        <?php require(get_template_directory().'/_/inc/meta.php') ?>
 
-				<div class="entry">
+        <div class="entry">
+          <?php the_excerpt() ?>
+        </div>
 
-					<?php the_excerpt(); ?>
+      </article>
 
-				</div>
+    <?php endwhile ?>
 
-			</article>
+    <?php require(get_template_directory().'/_/inc/nav.php') ?>
 
-		<?php endwhile; ?>
+  <?php else : ?>
 
-		<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+    <h2>No posts found.</h2>
 
-	<?php else : ?>
+  <?php endif ?>
 
-		<h2>No posts found.</h2>
+<?php get_sidebar() ?>
 
-	<?php endif; ?>
-
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+<?php get_footer() ?>
