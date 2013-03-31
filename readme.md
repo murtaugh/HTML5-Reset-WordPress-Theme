@@ -1,5 +1,13 @@
 #  HTML5 Reset Wordpress Theme
 
+## March 21 Update
+
+Good news! WordPress developer and all around good guy CK Hicks ([@ckhicks](http://twitter.com/ckhicks)) has offered to help me out (read as: do the WordPress work I'm incapable of) with getting these files up to date!
+
+## March 20 Update
+
+The main HTML5 Reset repo has finally been updated, but I'm unqualified to update the Wordpress theme at this point. I would gladly take suggestions on what should be done with it.
+
 ## Summary:
 
 The HTML5 Reset Wordpress theme is a blank theme based on the [HTML5 Reset templates](https://github.com/murtaugh/HTML5-Reset). It's a great empty slate upon which to build your own HTML5-based Wordpress themes.
