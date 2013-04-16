@@ -13,7 +13,9 @@
 
     	<?php get_search_form(); ?>
     
-    	<?php wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
+    	<ul>
+    		<?php wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
+    	</ul>
     
     	<h2>Archives</h2>
     	<ul>
@@ -25,7 +27,9 @@
     	   <?php wp_list_categories('show_count=1&title_li='); ?>
         </ul>
         
-    	<?php wp_list_bookmarks(); ?>
+    	<ul>
+    		<?php wp_list_bookmarks(); ?>
+    	</ul>
     
     	<h2>Meta</h2>
     	<ul>
