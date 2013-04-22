@@ -103,12 +103,12 @@
 		add_action( 'wp_enqueue_scripts', 'core_mods' );
 	}
 
-	// Clean up the <head>
-	function removeHeadLinks() {
-    	remove_action('wp_head', 'rsd_link');
-    	remove_action('wp_head', 'wlwmanifest_link');
-    }
-    add_action('init', 'removeHeadLinks');
+	// Clean up the <head>, if you so desire.
+	//	function removeHeadLinks() {
+	//    	remove_action('wp_head', 'rsd_link');
+	//    	remove_action('wp_head', 'wlwmanifest_link');
+	//    }
+	//    add_action('init', 'removeHeadLinks');
 
 	// Custom Menu
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'html5reset' ) );
