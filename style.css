@@ -1,7 +1,7 @@
 /*   
 Theme Name: The HTML5 Reset Theme
 Theme URI: http://html5reset.org
-Description: A style-free theme to get you started on an HTML5-based Wordpress theme of your own.
+Description: A style-free theme to get you started on an HTML5-based WordPress theme of your own.
 Author: Monkey Do! + @ckhicks
 Author URI: http://monkeydo.biz
 Version: 2.0
@@ -41,7 +41,7 @@ input:-moz-placeholder { color:#a9a9a9; }
 textarea:-moz-placeholder { color:#a9a9a9; }
 
 
-/* And here begins the Wordpress fun.
+/* And here begins the WordPress fun.
 -------------------------------------------------------------------------------*/
 
 #page-wrap {width: 960px; margin: 20px auto;}
