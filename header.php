@@ -64,12 +64,12 @@
 	} ?>
 
 	<!-- concatenate and minify for production -->
-	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/reset.css" />
-	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/style.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>/style.css" />
 	
 	<!-- This is an un-minified, complete version of Modernizr. 
 		 Before you move to production, you should generate a custom build that only has the detects you need. -->
-	<script src="<?php bloginfo( 'template_directory' ); ?>/_/js/modernizr-2.6.2.dev.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/_/js/modernizr-2.6.2.dev.js"></script>
 
 	<!-- Application-specific meta tags -->
 	<?php if (true == of_get_option('meta_app_win_name')) {

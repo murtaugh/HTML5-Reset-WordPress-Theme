@@ -1,5 +1,9 @@
 #  HTML5 Reset Wordpress Theme
 
+## May 15 Update
+
+Localization should be complete and all pull requests have been eliminated - this puppy is taking shape! Keep an eye on this space for more tweaks soon.
+
 ## March 30 Update
 
 *"Hmm, Upgrades." -- Neo*

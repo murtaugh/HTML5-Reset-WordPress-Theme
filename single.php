@@ -16,15 +16,15 @@
 				
 				<?php the_content(); ?>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+				<?php wp_link_pages(array('before' => __('Pages: '), 'next_or_number' => 'number')); ?>
 				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
+				<?php the_tags( __('Tags: '), ', ', ''); ?>
 			
 				<?php posted_on(); ?>
 
 			</div>
 			
-			<?php edit_post_link('Edit this entry','','.'); ?>
+			<?php edit_post_link(__('Edit this entry'),'','.'); ?>
 			
 		</article>
 
