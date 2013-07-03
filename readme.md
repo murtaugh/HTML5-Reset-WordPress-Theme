@@ -1,5 +1,11 @@
 #  HTML5 Reset WordPress Theme
 
+## July 3 Update
+
+I spent some time cleaning up stray code, nothing major this time around. Thanks to everyone who is keeping tabs on development and providing input!
+
+As a note: HTML5 Reset is installed with the latest version of WordPress [here](http://ckhicks.com/html5reset/) for example purposes.
+
 ## May 15 Update
 
 Localization should be complete and all pull requests have been eliminated - this puppy is taking shape! Keep an eye on this space for more tweaks soon.

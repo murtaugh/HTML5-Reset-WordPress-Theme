@@ -7,30 +7,17 @@
 ?>
  <div id="sidebar">
 
-    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
+    <?php if (!function_exists('dynamic_sidebar') && !dynamic_sidebar('Sidebar Widgets')) : else : ?>
     
         <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
 
     	<?php get_search_form(); ?>
     
-    	<ul>
-    		<?php wp_list_pages('title_li=<h2>'.__('Pages','html5reset').'</h2>' ); ?>
-    	</ul>
-    
     	<h2><?php _e('Archives','html5reset'); ?></h2>
     	<ul>
     		<?php wp_get_archives('type=monthly'); ?>
     	</ul>
-        
-        <h2><?php _e('Categories','html5reset'); ?></h2>
-        <ul>
-    	   <?php wp_list_categories('show_count=1&title_li='); ?>
-        </ul>
-        
-    	<ul>
-    		<?php wp_list_bookmarks(); ?>
-    	</ul>
-    
+            
     	<h2><?php _e('Meta','html5reset'); ?></h2>
     	<ul>
     		<?php wp_register(); ?>

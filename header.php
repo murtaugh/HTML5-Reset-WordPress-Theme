@@ -96,13 +96,6 @@
 	echo '<meta property="og:image" content="'.of_get_option("meta_app_fb_image").'" />';
 	} ?>
 
-	<!-- Dublin Core Metadata : http://dublincore.org/
-	Do we need this?
-	-->
-	<!--<meta name="DC.title" content="Project Name">
-	<meta name="DC.subject" content="What you're about.">
-	<meta name="DC.creator" content="Who made this site.">-->
-
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 

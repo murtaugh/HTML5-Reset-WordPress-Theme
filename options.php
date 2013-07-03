@@ -27,53 +27,6 @@ function optionsframework_option_name() {
 
 function optionsframework_options() {
 
-	// Test data
-	$test_array = array(
-		'one' => __('One', 'html5reset'),
-		'two' => __('Two', 'html5reset'),
-		'three' => __('Three', 'html5reset'),
-		'four' => __('Four', 'html5reset'),
-		'five' => __('Five', 'html5reset')
-	);
-
-	// Multicheck Array
-	$multicheck_array = array(
-		'one' => __('French Toast', 'html5reset'),
-		'two' => __('Pancake', 'html5reset'),
-		'three' => __('Omelette', 'html5reset'),
-		'four' => __('Crepe', 'html5reset'),
-		'five' => __('Waffle', 'html5reset')
-	);
-
-	// Multicheck Defaults
-	$multicheck_defaults = array(
-		'one' => '1',
-		'five' => '1'
-	);
-
-	// Background Defaults
-	$background_defaults = array(
-		'color' => '',
-		'image' => '',
-		'repeat' => 'repeat',
-		'position' => 'top center',
-		'attachment'=>'scroll' );
-
-	// Typography Defaults
-	$typography_defaults = array(
-		'size' => '15px',
-		'face' => 'georgia',
-		'style' => 'bold',
-		'color' => '#bada55' );
-		
-	// Typography Options
-	$typography_options = array(
-		'sizes' => array( '6','12','14','16','20' ),
-		'faces' => array( 'Helvetica Neue' => 'Helvetica Neue','Arial' => 'Arial' ),
-		'styles' => array( 'normal' => 'Normal','bold' => 'Bold' ),
-		'color' => false
-	);
-
 	// Pull all the categories into an array
 	$options_categories = array();
 	$options_categories_obj = get_categories();
@@ -87,7 +40,6 @@ function optionsframework_options() {
 	foreach ( $options_tags_obj as $tag ) {
 		$options_tags[$tag->term_id] = $tag->name;
 	}
-
 
 	// Pull all the pages into an array
 	$options_pages = array();
@@ -218,44 +170,6 @@ function optionsframework_options() {
 		'id' => 'meta_app_fb_image',
 		'std' => '',
 		'type' => 'upload');
-
-
-
-
-
-
-
-	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('.', 'html5reset'),
-		'id' => '',
-		'std' => '',
-		'type' => 'text');
-
-//		'class' => 'mini',
-//
-//$options[] = array(
-//	'name' => __('', 'html5reset'),
-//	'desc' => __('.', 'html5reset'),
-//	'id' => '',
-//	'std' => '',
-//	'type' => 'text');
-
-
-	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('', 'html5reset'),
-		'id' => '',
-//		'std' => '1',
-		'type' => 'checkbox');
-
-
-	$options[] = array(
-		'name' => __('', 'html5reset'),
-		'desc' => __('.', 'html5reset'),
-		'id' => '',
-		'std' => '',
-		'type' => 'text');
 
 	return $options;
 
