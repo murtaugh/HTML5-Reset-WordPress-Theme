@@ -14,26 +14,26 @@
 	// Theme Setup (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function html5reset_setup() {
 		load_theme_textdomain( 'html5reset', get_template_directory() . '/languages' );
-		add_theme_support( 'automatic-feed-links' );	
+		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'structured-post-formats', array( 'link', 'video' ) );
 		add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'quote', 'status' ) );
 		register_nav_menu( 'primary', __( 'Navigation Menu', 'html5reset' ) );
 		add_theme_support( 'post-thumbnails' );
 	}
 	add_action( 'after_setup_theme', 'html5reset_setup' );
-	
+
 	// Scripts & Styles (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function html5reset_scripts_styles() {
 		global $wp_styles;
 
-		// Load Comments	
+		// Load Comments
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 			wp_enqueue_script( 'comment-reply' );
-	
+
 		// Load Stylesheets
 		wp_enqueue_style( 'html5reset-reset', get_template_directory_uri() . '/reset.css' );
 		wp_enqueue_style( 'html5reset-style', get_stylesheet_uri() );
-	
+
 		// Load IE Stylesheet.
 //		wp_enqueue_style( 'html5reset-ie', get_template_directory_uri() . '/css/ie.css', array( 'html5reset-style' ), '20130213' );
 //		$wp_styles->add_data( 'html5reset-ie', 'conditional', 'lt IE 9' );
@@ -41,25 +41,28 @@
 		// Modernizr
 		// This is an un-minified, complete version of Modernizr. Before you move to production, you should generate a custom build that only has the detects you need.
 		wp_enqueue_script( 'html5reset-modernizr', get_template_directory_uri() . '/_/js/modernizr-2.6.2.dev.js' );
-		
+
+		// Load our custom functions
+		wp_enqueue_script( 'html5reset-scripts', get_template_directory_uri() . '/_/js/functions.js', array( 'jquery' ), '20131029', true );
+
 	}
 	add_action( 'wp_enqueue_scripts', 'html5reset_scripts_styles' );
-	
+
 	// WP Title (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function html5reset_wp_title( $title, $sep ) {
 		global $paged, $page;
-	
+
 		if ( is_feed() )
 			return $title;
-	
+
 //		 Add the site name.
 		$title .= get_bloginfo( 'name' );
-	
+
 //		 Add the site description for the home/front page.
 		$site_description = get_bloginfo( 'description', 'display' );
 		if ( $site_description && ( is_home() || is_front_page() ) )
 			$title = "$title $sep $site_description";
-	
+
 //		 Add a page number if necessary.
 		if ( $paged >= 2 || $page >= 2 )
 			$title = "$title $sep " . sprintf( __( 'Page %s', 'html5reset' ), max( $paged, $page ) );
@@ -80,7 +83,7 @@
 //		    bloginfo('name'); }
 //		if ($paged>1) {
 //		   echo ' - page '. $paged; }
-	
+
 		return $title;
 	}
 	add_filter( 'wp_title', 'html5reset_wp_title', 10, 2 );
