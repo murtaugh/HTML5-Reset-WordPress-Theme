@@ -36,8 +36,8 @@ In addition to all the standard WordPress elements and classes, we have added th
 
 ### HTML5 Reset brings to the table:
 
-1. A style sheet designed to strip initial files from browsers, meaning you start off with a blank slate.
-2. Easy to customize -- remove whatever you don't need, keep what you do.
+1. A style sheet designed to strip initial files from browsers, meaning you start off with a blank slate
+2. An easily customizable codebase -- remove whatever you don't need, keep what you do
 3. Analytics and jQuery snippets in place
 4. Meta tags ready for population
 5. Empty mobile and print style sheets, including blocks for device orientation
