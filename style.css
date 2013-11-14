@@ -44,7 +44,7 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 /* And here begins the WordPress fun.
 -------------------------------------------------------------------------------*/
 
-#page-wrap {width: 960px; margin: 20px auto;}
+#wrapper {width: 960px; margin: 20px auto;}
 
 .post {}
 
@@ -129,3 +129,4 @@ ol.commentlist li.thread-odd {}
 @media all and (orientation: landscape) {
 	
 }
+
