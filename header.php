@@ -48,11 +48,13 @@
 	} ?>
 	
 	<?php if (true == of_get_option('head_favicon')) {
-	echo '<link rel="shortcut icon" href="'.of_get_option("head_favicon").'" />';
-	echo '<!-- This is the traditional favicon.
-		 - size: 16x16 or 32x32
+	echo '<meta name=”mobile-web-app-capable” content=”yes”>';
+	echo '<link rel="shortcut icon" sizes=”1024x1024” href="'.of_get_option("head_favicon").'" />';
+	echo '<!-- These are for traditional favicons and Android home screens.
+		 - sizes: 1024x1024
 		 - transparency is OK
-		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->';
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ 
+		 - See Google Developer docs for Android options. https://developers.google.com/chrome/mobile/docs/installtohomescreen -->';
 	} ?>
 
 	<?php if (true == of_get_option('head_apple_touch_icon')) {
