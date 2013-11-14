@@ -16,14 +16,11 @@
 
 <!-- here comes the javascript -->
 
-<!-- jQuery is called via the WordPress-friendly way via functions.php -->
-
-<!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
+<!-- jQuery and our custom functions are called via the WordPress-friendly way via functions.php -->
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-	 
+
 <script>
 
   var _gaq = _gaq || [];
@@ -38,7 +35,7 @@
 
 </script>
 -->
-	
+
 </body>
 
 </html>
