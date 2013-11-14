@@ -114,7 +114,7 @@
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'html5reset' ) );
 
 	// Widgets
-	if ( !function_exists('register_sidebar' )) {
+	if ( function_exists('register_sidebar' )) {
 		function html5reset_widgets_init() {
 			register_sidebar( array(
 				'name'          => __( 'Sidebar Widgets', 'html5reset' ),
