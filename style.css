@@ -117,7 +117,8 @@ ol.commentlist li.thread-odd {}
 /* Media queries!
 -------------------------------------------------------------------------------*/
 
-/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/
+
 @media screen and (max-device-width: 480px) {
 
 }
@@ -128,5 +129,4 @@ ol.commentlist li.thread-odd {}
 
 @media all and (orientation: landscape) {
 	
-}
-
+} */

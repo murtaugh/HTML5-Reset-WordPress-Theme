@@ -1,4 +1,4 @@
-// Browser detection for when you get desparate.
+// Browser detection for when you get desparate. A measure of last resort.
 // http://rog.ie/post/9089341529/html5boilerplatejs
 
 // var b = document.documentElement;
@@ -11,26 +11,24 @@
 // remap jQuery to $
 (function($){
 
-
-/* trigger when page is ready */
-$(document).ready(function (){
-
-	// your functions go here
-
-});
-
-
-/* optional triggers
-
-$(window).load(function() {
+	/* trigger when page is ready */
+	$(document).ready(function (){
 	
-});
-
-$(window).resize(function() {
+		// your functions go here
 	
-});
-
-*/
-
+	});
+	
+	
+	/* optional triggers
+	
+	$(window).load(function() {
+		
+	});
+	
+	$(window).resize(function() {
+		
+	});
+	
+	*/
 
 })(window.jQuery);
