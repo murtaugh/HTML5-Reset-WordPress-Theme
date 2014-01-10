@@ -1,5 +1,9 @@
 #  HTML5 Reset WordPress Theme
 
+## January 10 Update
+
+Long time no see! I really appreciate all of the updates and input from everyone. The number of watchers on this repo grows every time we update - keep 'em coming!
+
 ## July 3 Update
 
 I spent some time cleaning up stray code, nothing major this time around. Thanks to everyone who is keeping tabs on development and providing input!
