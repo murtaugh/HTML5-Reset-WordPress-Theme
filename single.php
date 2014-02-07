@@ -18,7 +18,7 @@
 
 				<?php wp_link_pages(array('before' => __('Pages: ','html5reset'), 'next_or_number' => 'number')); ?>
 				
-				<?php the_tags( __('Tags: '), ', ', ''); ?>
+				<?php the_tags( __('Tags: ','html5reset'), ', ', ''); ?>
 			
 				<?php posted_on(); ?>
 
