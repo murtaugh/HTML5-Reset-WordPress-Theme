@@ -22,7 +22,7 @@
 
 			</div>
 
-			<?php edit_post_link(__('Edit this entry.','html5reset'), '<p>', '</p>'); ?>
+			<?php edit_post_link(__('Edit this entry','html5reset'), '<p>', '</p>'); ?>
 
 		</article>
 		
