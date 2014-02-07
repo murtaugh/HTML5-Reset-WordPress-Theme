@@ -18,11 +18,11 @@
 
 				<?php the_content(); ?>
 
-				<?php wp_link_pages(array('before' => __('Pages: '), 'next_or_number' => 'number')); ?>
+				<?php wp_link_pages(array('before' => __('Pages: ','html5reset'), 'next_or_number' => 'number')); ?>
 
 			</div>
 
-			<?php edit_post_link(__('Edit this entry.'), '<p>', '</p>'); ?>
+			<?php edit_post_link(__('Edit this entry.','html5reset'), '<p>', '</p>'); ?>
 
 		</article>
 		
