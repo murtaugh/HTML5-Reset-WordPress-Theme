@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HTML5-Reset-WordPress-Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-06 17:10+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Yuan Chiu <me@yuaner.tw>\n"
+"Language-Team: Yuan Chiu <me@yuaner.tw>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_TW\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:3
+msgid "Error 404 - Page Not Found"
+msgstr "404 錯誤 - 沒有找到此頁面"
+
+#: archive.php:8
+msgid "Archive for the"
+msgstr "歸類為"
+
+#: archive.php:8
+msgid "Category"
+msgstr "分類"
+
+#: archive.php:11
+msgid "Posts Tagged"
+msgstr "文章標記"
+
+#: archive.php:14 archive.php:17 archive.php:20
+msgid "Archive for"
+msgstr "存檔"
+
+#: archive.php:23
+msgid "Author Archive"
+msgstr "作者"
+
+#: archive.php:26
+msgid "Blog Archives"
+msgstr "部落格存檔"
+
+#: archive.php:52
+msgid "Nothing found"
+msgstr "沒有找到"
+
+#: comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "這篇文章已被保護，請輸入密碼來觀看。"
+
+#: comments.php:15
+msgid "No Responses"
+msgstr "沒有留言"
+
+#: comments.php:15
+msgid "One Response"
+msgstr "一個留言"
+
+#: comments.php:15
+msgid "% Responses"
+msgstr "% 個留言"
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr "留言功能已關閉"
+
+#: comments.php:47
+msgid "Leave a Reply"
+msgstr "來留言吧"
+
+#: comments.php:47
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "留言給 %s"
+
+#: comments.php:54
+msgid "You must be"
+msgstr "你必需要"
+
+#: comments.php:54
+msgid "logged in"
+msgstr "登入"
+
+#: comments.php:54
+msgid "to post a comment"
+msgstr "回應"
+
+#: comments.php:61
+msgid "Logged in as"
+msgstr "登入為"
+
+#: comments.php:61
+msgid "Log out"
+msgstr "登出"
+
+#: comments.php:67
+msgid "Name"
+msgstr "姓名"
+
+#: comments.php:72
+msgid "Mail (will not be published)"
+msgstr "電子郵件 (不會被公開)"
+
+#: comments.php:77
+msgid "Website"
+msgstr "網站"
+
+#: comments.php:89
+msgid "Submit Comment"
+msgstr "送出留言"
+
+#: functions.php:35
+msgid "Sidebar Widgets"
+msgstr "側邊小工具"
+
+#: functions.php:37
+msgid "These are widgets for the sidebar."
+msgstr "這些小工具都在側邊"
+
+#: header.php:44
+msgid "Tag Archive for &quot;"
+msgstr ""
+
+#: header.php:46
+msgid " Archive - "
+msgstr ""
+
+#: header.php:48
+msgid "Search for &quot;"
+msgstr "搜尋於 &quot;"
+
+#: header.php:52
+msgid "Not Found - "
+msgstr "沒有找到 - "
+
+#: index.php:16
+msgid "Tags: "
+msgstr "標籤: "
+
+#: index.php:17
+msgid "Posted in"
+msgstr "刊出於"
+
+#: index.php:18
+msgid "No Comments &#187;"
+msgstr "沒有留言 &#187;"
+
+#: index.php:18
+msgid "1 Comment &#187;"
+msgstr "一個留言  &#187;"
+
+#: index.php:18
+msgid "% Comments &#187;"
+msgstr "% 個留言  &#187;"
+
+#: index.php:29
+msgid "Not found."
+msgstr "沒有找到。"
+
+#: page.php:15
+msgid "Pages: "
+msgstr ""
+
+#: page.php:19
+msgid "Edit this entry."
+msgstr "進入此文章"
+
+#: search.php:5
+msgid "Search Results"
+msgstr "搜尋結果"
+
+#: search.php:31
+msgid "No posts found."
+msgstr "沒有文章。"
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr "搜尋於: "
+
+#: searchform.php:6
+msgid "Search"
+msgstr "搜尋"
+
+#: sidebar.php:9
+msgid "Pages"
+msgstr "頁面"
+
+#: sidebar.php:11
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Categories"
+msgstr "分類"
+
+#: sidebar.php:23
+msgid "Meta"
+msgstr ""
+
+#: sidebar.php:27
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: sidebar.php:31
+msgid "Subscribe"
+msgstr "訂閱"
+
+#: sidebar.php:33
+msgid "Entries (RSS)"
+msgstr "文章 (RSS)"
+
+#: sidebar.php:34
+msgid "Comments (RSS)"
+msgstr "留言 (RSS)"
+
+#: single.php:13
+msgid "Pages:"
+msgstr "頁面:"
+
+#: single.php:15
+msgid "Tags:"
+msgstr "標籤: "
+
+#: single.php:21
+msgid "Edit this entry"
+msgstr "編輯此文章"
