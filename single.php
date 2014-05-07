@@ -16,15 +16,15 @@
 				
 				<?php the_content(); ?>
 
-				<?php wp_link_pages(array('before' => __('Pages: '), 'next_or_number' => 'number')); ?>
+				<?php wp_link_pages(array('before' => __('Pages: ','html5reset'), 'next_or_number' => 'number')); ?>
 				
-				<?php the_tags( __('Tags: '), ', ', ''); ?>
+				<?php the_tags( __('Tags: ','html5reset'), ', ', ''); ?>
 			
 				<?php posted_on(); ?>
 
 			</div>
 			
-			<?php edit_post_link(__('Edit this entry'),'','.'); ?>
+			<?php edit_post_link(__('Edit this entry','html5reset'),'','.'); ?>
 			
 		</article>
 

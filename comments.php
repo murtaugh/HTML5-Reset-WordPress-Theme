@@ -12,7 +12,7 @@
 
 <?php if ( have_comments() ) : ?>
 	
-	<h2 id="comments"><?php comments_number(__('No Responses'), __('One Response'), __('% Responses') );?></h2>
+	<h2 id="comments"><?php comments_number(__('No Responses','html5reset'), __('One Response','html5reset'), __('% Responses','html5reset') );?></h2>
 
 	<div class="navigation">
 		<div class="next-posts"><?php previous_comments_link() ?></div>
@@ -44,7 +44,7 @@
 
 <div id="respond">
 
-	<h2><?php comment_form_title( 'Leave a Reply', __('Leave a Reply to %s') ); ?></h2>
+	<h2><?php comment_form_title( __('Leave a Reply','html5reset'), __('Leave a Reply to %s','html5reset') ); ?></h2>
 
 	<div class="cancel-comment-reply">
 		<?php cancel_comment_reply_link(); ?>

@@ -1,0 +1,550 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The HTML5 Reset Theme v2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-02-07 16:01:51+0000\n"
+"Last-Translator: mindtwist <mindtwist@mindtwist.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:9
+#@ html5reset
+msgid "Error 404 - Page Not Found"
+msgstr "404 Fout - Pagina niet gevonden"
+
+#: _/inc/options-framework.php:173
+#: _/inc/options-framework.php:388
+#@ options_framework_theme
+msgid "Theme Options"
+msgstr ""
+
+#: _/inc/options-framework.php:204
+#@ options_framework_theme
+msgid "Clear"
+msgstr ""
+
+#: _/inc/options-framework.php:205
+#@ options_framework_theme
+msgid "Default"
+msgstr ""
+
+#: _/inc/options-framework.php:206
+#@ options_framework_theme
+msgid "Select Color"
+msgstr ""
+
+#: _/inc/options-framework.php:251
+#@ options_framework_theme
+msgid "Save Options"
+msgstr ""
+
+#: _/inc/options-framework.php:252
+#@ options_framework_theme
+msgid "Restore Defaults"
+msgstr ""
+
+#: _/inc/options-framework.php:252
+#@ options_framework_theme
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: _/inc/options-framework.php:284
+#@ options_framework_theme
+msgid "Default options restored."
+msgstr ""
+
+#: _/inc/options-framework.php:338
+#@ options_framework_theme
+msgid "Options saved."
+msgstr ""
+
+#: _/inc/options-media-uploader.php:51
+#@ options_framework_theme
+msgid "No file chosen"
+msgstr ""
+
+#: _/inc/options-media-uploader.php:54
+#: _/inc/options-media-uploader.php:111
+#@ options_framework_theme
+msgid "Upload"
+msgstr ""
+
+#: _/inc/options-media-uploader.php:56
+#: _/inc/options-media-uploader.php:112
+#@ options_framework_theme
+msgid "Remove"
+msgstr ""
+
+#: _/inc/options-media-uploader.php:59
+#@ options_framework_theme
+msgid "Upgrade your version of WordPress for full media support."
+msgstr ""
+
+#: _/inc/options-media-uploader.php:83
+#@ options_framework_theme
+msgid "View File"
+msgstr ""
+
+#: _/inc/options-sanitize.php:232
+#@ options_framework_theme
+msgid "No Repeat"
+msgstr ""
+
+#: _/inc/options-sanitize.php:233
+#@ options_framework_theme
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: _/inc/options-sanitize.php:234
+#@ options_framework_theme
+msgid "Repeat Vertically"
+msgstr ""
+
+#: _/inc/options-sanitize.php:235
+#@ options_framework_theme
+msgid "Repeat All"
+msgstr ""
+
+#: _/inc/options-sanitize.php:248
+#@ options_framework_theme
+msgid "Top Left"
+msgstr ""
+
+#: _/inc/options-sanitize.php:249
+#@ options_framework_theme
+msgid "Top Center"
+msgstr ""
+
+#: _/inc/options-sanitize.php:250
+#@ options_framework_theme
+msgid "Top Right"
+msgstr ""
+
+#: _/inc/options-sanitize.php:251
+#@ options_framework_theme
+msgid "Middle Left"
+msgstr ""
+
+#: _/inc/options-sanitize.php:252
+#@ options_framework_theme
+msgid "Middle Center"
+msgstr ""
+
+#: _/inc/options-sanitize.php:253
+#@ options_framework_theme
+msgid "Middle Right"
+msgstr ""
+
+#: _/inc/options-sanitize.php:254
+#@ options_framework_theme
+msgid "Bottom Left"
+msgstr ""
+
+#: _/inc/options-sanitize.php:255
+#@ options_framework_theme
+msgid "Bottom Center"
+msgstr ""
+
+#: _/inc/options-sanitize.php:256
+#@ options_framework_theme
+msgid "Bottom Right"
+msgstr ""
+
+#: _/inc/options-sanitize.php:269
+#@ options_framework_theme
+msgid "Scroll Normally"
+msgstr ""
+
+#: _/inc/options-sanitize.php:270
+#@ options_framework_theme
+msgid "Fixed in Place"
+msgstr ""
+
+#: _/inc/options-sanitize.php:344
+#@ options_framework_theme
+msgid "Normal"
+msgstr ""
+
+#: _/inc/options-sanitize.php:345
+#@ options_framework_theme
+msgid "Italic"
+msgstr ""
+
+#: _/inc/options-sanitize.php:346
+#@ options_framework_theme
+msgid "Bold"
+msgstr ""
+
+#: _/inc/options-sanitize.php:347
+#@ options_framework_theme
+msgid "Bold Italic"
+msgstr ""
+
+#: archive.php:14
+#@ html5reset
+msgid "Archive for the"
+msgstr "Archief voor"
+
+#: archive.php:14
+#@ html5reset
+msgid "Category"
+msgstr "Categorie"
+
+#: archive.php:17
+#@ html5reset
+msgid "Posts Tagged"
+msgstr "Berichte getagged"
+
+#: archive.php:20
+#: archive.php:23
+#: archive.php:26
+#@ html5reset
+msgid "Archive for"
+msgstr "Archief voor"
+
+#: archive.php:29
+#@ html5reset
+msgid "Author Archive"
+msgstr "Auteurs archief"
+
+#: archive.php:32
+#@ html5reset
+msgid "Blog Archives"
+msgstr "Blog archief"
+
+#: archive.php:58
+#: index.php:35
+#: search.php:37
+#@ html5reset
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#: comments.php:7
+#@ html5reset
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Dit bericht is beveiligd met een wachtwoord. Voer het wachtwoord in om de reacties te bekijken."
+
+#: comments.php:15
+#@ html5reset
+msgid "No Responses"
+msgstr "Geen reacties"
+
+#: comments.php:15
+#@ html5reset
+msgid "One Response"
+msgstr "Één reactie"
+
+#: comments.php:15
+#@ html5reset
+msgid "% Responses"
+msgstr "% Reacties"
+
+#: comments.php:37
+#@ html5reset
+msgid "Comments are closed."
+msgstr "Reageren is uitgeschakeld."
+
+#: comments.php:47
+#, php-format
+#@ html5reset
+msgid "Leave a Reply to %s"
+msgstr "Reageer op %s"
+
+#: comments.php:54
+#@ html5reset
+msgid "You must be"
+msgstr "Om te kunnen reageren moet u"
+
+#: comments.php:54
+#@ html5reset
+msgid "logged in"
+msgstr "ingelogd zijn"
+
+#: comments.php:54
+#@ html5reset
+msgid "to post a comment."
+msgstr "."
+
+#: comments.php:61
+#@ html5reset
+msgid "Logged in as"
+msgstr "Ingelogd als"
+
+#: comments.php:61
+#@ html5reset
+msgid "Log out"
+msgstr "Uitloggen"
+
+#: comments.php:67
+#@ html5reset
+msgid "Name"
+msgstr "Naam"
+
+#: comments.php:72
+#@ html5reset
+msgid "Mail (will not be published)"
+msgstr "E-mail (zal niet worden getoond)"
+
+#: comments.php:77
+#@ html5reset
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:89
+#@ html5reset
+msgid "Submit Comment"
+msgstr "Plaats reactie"
+
+#: functions.php:20
+#: functions.php:114
+#@ html5reset
+msgid "Navigation Menu"
+msgstr "Navigatie menu"
+
+#: functions.php:65
+#, php-format
+#@ html5reset
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: functions.php:120
+#@ html5reset
+msgid "Sidebar Widgets"
+msgstr "Zijbalk widgets"
+
+#: functions.php:141
+#, php-format
+msgid "<span class=\"sep\">Posted </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a> by <span class=\"byline author vcard\">%5$s</span>"
+msgstr ""
+
+#: index.php:22
+#: single.php:21
+#@ html5reset
+msgid "Tags: "
+msgstr "Tags:"
+
+#: index.php:23
+#@ html5reset
+msgid "Posted in"
+msgstr "Geplaatst in"
+
+#: index.php:24
+#@ html5reset
+msgid "No Comments &#187;"
+msgstr "Geen reacties &#187;"
+
+#: index.php:24
+#@ html5reset
+msgid "1 Comment &#187;"
+msgstr "1 reactie &#187;"
+
+#: index.php:24
+#@ html5reset
+msgid "% Comments &#187;"
+msgstr "% reacties &#187;"
+
+#: options.php:55
+#@ html5reset
+msgid "Header Meta"
+msgstr ""
+
+#: options.php:60
+#@ html5reset
+msgid "Head ID"
+msgstr ""
+
+#: options.php:66
+#@ html5reset
+msgid "Google Webmasters"
+msgstr ""
+
+#: options.php:67
+#@ html5reset
+msgid "Speaking of Google, don't forget to set your site up: <a href='http://google.com/webmasters' target='_blank'>http://google.com/webmasters</a>"
+msgstr "Over Google gesproken, vergeet je site niet in te stellen op: <a href='http://google.com/webmasters' target='_blank'>http://google.com/webmasters</a>"
+
+#: options.php:72
+#@ html5reset
+msgid "Author Name"
+msgstr "Naam auteur"
+
+#: options.php:73
+#@ html5reset
+msgid "Populates meta author tag."
+msgstr "Vul meta auteur tag."
+
+#: options.php:78
+#@ html5reset
+msgid "Mobile Viewport"
+msgstr "Viewport voor mobiel"
+
+#: options.php:79
+#@ html5reset
+msgid "Uncomment to use; use thoughtfully!"
+msgstr "Verwijder het commentaar om te gebruiken; doe dit niet zonder na te denken!"
+
+#: options.php:86
+#@ html5reset
+msgid "Site Favicon"
+msgstr "Website favicon"
+
+#: options.php:91
+#@ html5reset
+msgid "Apple Touch Icon"
+msgstr "Apple Touch afbeelding"
+
+#: options.php:98
+#@ html5reset
+msgid "App: Windows 8"
+msgstr ""
+
+#: options.php:99
+#@ html5reset
+msgid "Application Name"
+msgstr "Applicatie naam"
+
+#: options.php:105
+#@ html5reset
+msgid "Tile Color"
+msgstr "Tile kleur"
+
+#: options.php:111
+#@ html5reset
+msgid "Tile Image"
+msgstr "Tile afbeelding"
+
+#: options.php:118
+#@ html5reset
+msgid "App: Twitter Card"
+msgstr ""
+
+#: options.php:119
+#@ html5reset
+msgid "twitter:card (summary, photo, gallery, product, app, player)"
+msgstr "twitter:card (samenvatting, foto, galerij, produkt, app, player)"
+
+#: options.php:125
+#@ html5reset
+msgid "twitter:site (@username of website)"
+msgstr "twitter:site (@gebruikersnaam van website)"
+
+#: options.php:131
+#@ html5reset
+msgid "twitter:title (the user's Twitter ID)"
+msgstr "twitter:title (Twitter ID van gebruiker)"
+
+#: options.php:137
+#@ html5reset
+msgid "twitter:description (maximum 200 characters)"
+msgstr "twitter:description (omschrijving, maximum 200 karakters)"
+
+#: options.php:143
+#@ html5reset
+msgid "twitter:url (url for the content)"
+msgstr "twitter:url (URL naar de inhoud)"
+
+#: options.php:150
+#@ html5reset
+msgid "App: Facebook"
+msgstr ""
+
+#: options.php:151
+#@ html5reset
+msgid "og:title"
+msgstr ""
+
+#: options.php:157
+#@ html5reset
+msgid "og:description"
+msgstr ""
+
+#: options.php:163
+#@ html5reset
+msgid "og:url"
+msgstr ""
+
+#: options.php:169
+#@ html5reset
+msgid "og:image"
+msgstr ""
+
+#: page.php:21
+#: single.php:19
+#@ html5reset
+msgid "Pages: "
+msgstr "Pagina's: "
+
+#: search.php:11
+#@ html5reset
+msgid "Search Results"
+msgstr "Zoek resultaten"
+
+#: searchform.php:3
+#@ html5reset
+msgid "Search for:"
+msgstr "Zoeken naar:"
+
+#: searchform.php:6
+#@ html5reset
+msgid "Search"
+msgstr "Zoeken"
+
+#: sidebar.php:16
+#@ html5reset
+msgid "Archives"
+msgstr "Archieven"
+
+#: sidebar.php:21
+#@ html5reset
+msgid "Meta"
+msgstr ""
+
+#: sidebar.php:25
+#@ html5reset
+msgid "Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Mogelijk gemaakt door WordPress, een modern semantisch persoonlijk publicatie platform."
+
+#: sidebar.php:25
+#@ html5reset
+msgid "WordPress"
+msgstr ""
+
+#: sidebar.php:29
+#@ html5reset
+msgid "Subscribe"
+msgstr "Inschrijven"
+
+#: sidebar.php:31
+#@ html5reset
+msgid "Entries (RSS)"
+msgstr "Toevoegingen (RSS)"
+
+#: sidebar.php:32
+#@ html5reset
+msgid "Comments (RSS)"
+msgstr "Reacties (RSS)"
+
+#: page.php:25
+#: single.php:27
+#@ html5reset
+msgid "Edit this entry"
+msgstr "Bewerk dit item"
+
+#: comments.php:47
+#@ html5reset
+msgid "Leave a Reply"
+msgstr "Reageer"
+
