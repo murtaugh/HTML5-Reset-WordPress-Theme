@@ -83,7 +83,7 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 
 	<!-- Lea Verou's Prefix Free, lets you use only un-prefixed properties in yuor CSS files -->
-    <script src="<?php echo get_template_directory_uri(); ?>_/js/prefixfree.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/_/js/prefixfree.min.js"></script>
 
 	<!-- This is an un-minified, complete version of Modernizr.
 		 Before you move to production, you should generate a custom build that only has the detects you need. -->
