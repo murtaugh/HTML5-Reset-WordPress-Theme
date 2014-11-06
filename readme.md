@@ -12,9 +12,8 @@ HTML5 Reset is a simple set of *WordPress* best practices to get web projects of
 6. Modernizr.js [http://www.modernizr.com/](http://www.modernizr.com/) enables HTML5 compatibility with IE (and a dozen other great features)
 7. [Prefix-free.js](http://leaverou.github.io/prefixfree/) allowing us to only use un-prefixed styles in our CSS
 8. IE-specific classes for simple CSS-targeting
-9. Google's Chrome Frame prompt for IE6 users
-10. iPhone/iPad/iTouch icon snippets, plus social/app meta tags for Twitter, Facebook, Windows 8
-11. Lots of other keen stuff
+9. iPhone/iPad/iTouch icon snippets, plus social/app meta tags for Twitter, Facebook, Windows 8
+10. Lots of other keen stuff
 
 ## Get the plain HTML theme:
 
