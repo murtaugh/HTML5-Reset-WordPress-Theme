@@ -31,8 +31,10 @@
 
 	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
 
+<?php /* meta description is handled by SEO plugin
 	<!--Google will often use this as its description of your page/site. Make it good.-->
-	<meta name="description" content="<?php bloginfo('description'); ?>" />
+		<meta name="description" content="<?php bloginfo('description'); ?>" />
+*/ ?>
 
 	<?php
 		if (true == of_get_option('meta_author'))
