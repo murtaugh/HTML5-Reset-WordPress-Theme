@@ -1,11 +1,11 @@
 #  HTML5 Reset WordPress Theme
 
-HTML5 Reset is a simple set of *WordPress* best practices to get web projects off on the right foot.
+HTML5 Reset is a simple set of best practices for *Wordpress* to get web projects off on the right foot.
 
 ## Some of the features:
 
 1. A style sheet designed to strip initial styles from browsers, starting your development off with a blank slate.
-2. Easy to customize — remove whatever you don't need, keep what you do.
+2. Easy to customize — remove anything you don't need, keep what you need.
 3. Google Analytics and jQuery calls
 4. Meta tags ready for population
 5. Empty print and small-screen media queries
